@@ -51,6 +51,7 @@ $$u^0=I \quad \text{and} \quad \frac{u^1-u^{-1}}{2 \Delta t}=0. \quad \quad \qua
 To formulate the computational algorithm, we assume that $u^{n-1}$ and $u^n$ have already been calculated, then $u^{n+1}$ is the unknown value solved as
 $$u^{n+1}=2 u^n-u^{n-1}-\Delta t^2 \omega^2 u^n. \quad \quad \quad (1.8)$$
 The algorithm is to apply $(1.8)$ successively for $n=0,1, \ldots, N_t-1$.
+This numerical scheme sometimes goes under the name Störmer’s method, Verlet integration, or the Leapfrog method.
 When computing the first step at $n=0$, the discretization of initial conditions $(1.7)$ is needed to resolve the values of $u^{-1}$ and $u^0$.
 As a result, $u^1$ is calculated as
 $$u^1=I-\frac{1}{2} \Delta t^2 \omega^2 I. \quad \quad \quad (1.9)$$
