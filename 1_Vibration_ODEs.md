@@ -67,7 +67,7 @@ Square brackets are placed around the operator and the function it operates on t
 Therefore, the scheme $(1.5)$ can be written as
 $$[D_t D_t u+\omega^2 u=0]^n, \quad n=0,1, \ldots, N_t. \quad \quad \quad$$
 The discretization of initial conditions can be expressed as
-$$[u=I]^0, \text{and} [D_{2 t} u=0]^0.$$
+$$[u=I]^0 \quad \text{and} \quad [D_{2 t} u=0]^0.$$
 
 ## 1.2 Implementation
 
