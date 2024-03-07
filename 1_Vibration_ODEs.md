@@ -62,7 +62,7 @@ $$u'(t_n) \sim \frac{u^{n+\frac{1}{2}}-u^{n-\frac{1}{2}}}{\Delta t} \equiv [D_t 
 $$u'(t_n) \sim \frac{u^{n+1}-u^{n-1}}{2 \Delta t} \equiv [D_{2t} u]^n$$
 $$u''(t_n) \sim \frac{u^{n+1}-2 u^n+u^{n-1}}{\Delta t^2} \equiv  [D_t(D_t u)]^n \equiv [D_t D_t u]^n$$
 The operator is built of the symbol $D$, with the independent variable as its subscript and the type of difference as its superscript.
-The superscripts $-$ and $+$ indicate backward and forward differences, respectively.
+The superscripts $-$ and $+$ indicate backward and forward differences, respectively, while no superscript implies a central difference.
 Square brackets are placed around the operator and the function it operates on to specify the mesh point that the finite difference approximates to by a superscript after the closing bracket.
 Therefore, the scheme $(1.5)$ can be written as
 $$[D_t D_t u+\omega^2 u=0]^n, \quad n=0,1, \ldots, N_t. \quad \quad \quad$$
