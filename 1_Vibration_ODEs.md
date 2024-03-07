@@ -55,4 +55,12 @@ This numerical scheme sometimes goes under the name Störmer’s method, Verlet 
 When computing the first step at $n=0$, the discretization of initial conditions $(1.7)$ is needed to resolve the values of $u^{-1}$ and $u^0$.
 As a result, $u^1$ is calculated as
 $$u^1=I-\frac{1}{2} \Delta t^2 \omega^2 I. \quad \quad \quad (1.9)$$
+We introduce a group of compact operator notations for finite differences:
+$$u'(t_n) \sim \frac{u^n-u^{n-1}}{\Delta t} \equiv [D_t^{-} u]^n$$
+$$u'(t_n) \sim \frac{u^{n+1}-u^{n}}{\Delta t} \equiv [D_t^{+} u]^n$$
+$$u'(t_n) \sim \frac{u^{n+\frac{1}{2}}-u^{n-\frac{1}{2}}}{\Delta t} \equiv [D_t u]^n$$
+$$u'(t_n) \sim \frac{u^{n+1}-u^{n-1}}{2 \Delta t} \equiv [D_{2t} u]^n$$
+$$u''(t_n) \sim \frac{u^{n+1}-2 u^n+u^{n-1}}{\Delta t^2} \equiv  [D_t(D_t u)]^n \equiv [D_t D_t u]^n$$
+
+
 
