@@ -68,6 +68,8 @@ Therefore, the scheme $(1.5)$ can be written as
 $$[D_t D_t u+\omega^2 u=0]^n, \quad n=0,1, \ldots, N_t. \quad \quad \quad$$
 The discretization of initial conditions can be expressed as
 $$[u=I]^0 \quad \text{and} \quad [D_{2 t} u=0]^0.$$
+In difference equations the square brackets are often placed around the whole equation to indicate at which mesh point the equation applies,
+since each term must be approximated at the same point.
 
 ## 1.2 Implementation
 
